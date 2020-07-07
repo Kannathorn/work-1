@@ -9,10 +9,14 @@
             </nuxt-link>
           </div>
           <div class="my-2">
-            <v-btn color="primary" dark>กิจกรรมโฮมรูม</v-btn>
+            <nuxt-link to="/activit/homeroom">
+              <v-btn color="primary" dark>กิจกรรมโฮมรูม</v-btn>
+            </nuxt-link>
           </div>
           <div class="my-2">
-            <v-btn color="warning" dark>กิจกรรมพิเศษ</v-btn>
+            <nuxt-link to="/activit/special">
+              <v-btn color="warning" dark>กิจกรรมพิเศษ</v-btn>
+            </nuxt-link>
           </div>
           <div class="my-2">
             <v-btn color="error" dark large>กิจกรรมหน้าเสาธง</v-btn>
