@@ -1,11 +1,11 @@
 <template>
   <div class="text-center">
       <div>
-        กิจกรรมพิเศษ
+        กิจกรรมโฮมรูม
     </div>
     <div>
       <v-btn class="ma-2" color="orange darken-2" dark>
-        <nuxt-link to="/activit/menu">
+        <nuxt-link to="/menu">
         <v-icon dark left>mdi-arrow-left</v-icon>Back
         </nuxt-link>
       </v-btn>

@@ -4,26 +4,24 @@
       <v-col cols="12" sm="6">
         <div class="text-center">
           <div class="my-2">
-            <nuxt-link to="/activit/fing">
+            <nuxt-link to="/fing">
               <v-btn color="secondary" dark>กิจกรรมหน้าเสาธง</v-btn>
             </nuxt-link>
           </div>
           <div class="my-2">
-            <nuxt-link to="/activit/homeroom">
+            <nuxt-link to="/homeroom">
               <v-btn color="primary" dark>กิจกรรมโฮมรูม</v-btn>
             </nuxt-link>
           </div>
           <div class="my-2">
-            <nuxt-link to="/activit/special">
+            <nuxt-link to="/special">
               <v-btn color="warning" dark>กิจกรรมพิเศษ</v-btn>
             </nuxt-link>
           </div>
           <div class="my-2">
-            <v-btn color="error" dark large>กิจกรรมหน้าเสาธง</v-btn>
+            <div><button @click="doMENU">หน้าหลัง</button></div>
           </div>
-          <div class="my-2">
-            <v-btn color="success" dark>กิจกรรมหน้าเสาธง</v-btn>
-          </div>
+          
         </div>
       </v-col>
       <v-col cols="12" sm="6">
@@ -58,3 +56,18 @@
     </v-row>
   </v-container>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      name: "Kannathorn",
+      age: 19,
+    }
+  },
+  methods:{
+    doMENU(){
+    this.$router.push('/ex01')
+    },
+  },
+}
+</script>
