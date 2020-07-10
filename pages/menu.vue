@@ -18,8 +18,13 @@
               <v-btn color="warning" dark>กิจกรรมพิเศษ</v-btn>
             </nuxt-link>
           </div>
-          <div class="my-2">
-            <div><button @click="doMENU">หน้าหลัง</button></div>
+         <div class="my-2">
+            <nuxt-link to="/ex01">
+              <v-btn color="warning" dark>หน้าประวัติ</v-btn>
+            </nuxt-link>
+          </div>
+           <div class="my-2">
+            <div><button @click="doindex">HOME</button></div>
           </div>
           
         </div>
@@ -65,8 +70,13 @@ export default {
     }
   },
   methods:{
-    doMENU(){
+    doex01(){
     this.$router.push('/ex01')
+    },
+    },
+     methods:{
+    doindex(){
+    this.$router.push('/')
     },
   },
 }
